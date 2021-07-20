@@ -4,7 +4,7 @@
 
 ## Author: Tek Jones
   * [test report]()
-  * [deployment]()
+  * [deployment sandbox](https://codesandbox.io/s/pensive-platform-lmcz9)
 
 
 ## About
