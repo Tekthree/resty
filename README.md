@@ -17,9 +17,9 @@
 ## Running the app
   * npm start
 
+## Test
+* npm test
 
-## UML
-![UML](./UML1.png)
 
 
 ### Phase 1
@@ -28,3 +28,16 @@
 ### Technical Requirements
 - The application, as written by our development team was done using class components as a proof of concept. In order to go to production, we’re going to have to convert this to an application written using React function components so that our foundation is both stable and high performing.
 
+## UML
+![UML](./UML1.png)
+___
+
+### Phase 2
+- we will be receiving user input in preparation of connecting to live APIs, using the useState() hook in our functional components.
+
+### User Stories
+- As a user, I want to enter the REST Method and URL to an API
+- As a user, I want to see a summary of my request as well as results returned from an API request in my browser in a readable format
+
+## UML
+![UML](./UML2.png)

@@ -2,10 +2,7 @@ $backgroundColor: #efefef;
 $radius: 40%;
 
 form {
-  display: inline-block;
-  margin: auto;
-  width: 200px;
-
+ 
   label {
     display: flex;
     margin: 1rem 0;
@@ -15,10 +12,10 @@ form {
         cursor: pointer;
         margin-right: 1rem;
         padding: .25rem .5rem;
-        background: #ccc;
+        background: #130E26;
 
         &:hover, &.active {
-          background: #fff;
+          background: #b44d4d;
         }
       }
     }
