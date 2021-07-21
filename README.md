@@ -4,7 +4,8 @@
 
 ## Author: Tek Jones
   * [test report]()
-  * [deployment sandbox](https://codesandbox.io/s/pensive-platform-lmcz9)
+  * [deployment sandbox lab 26](https://codesandbox.io/s/pensive-platform-lmcz9)
+  * [deployment sandbox lab 27](https://codesandbox.io/s/exciting-bardeen-h2hhp)
 
 
 ## About
