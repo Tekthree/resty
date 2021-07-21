@@ -29,7 +29,7 @@
 - The application, as written by our development team was done using class components as a proof of concept. In order to go to production, we’re going to have to convert this to an application written using React function components so that our foundation is both stable and high performing.
 
 ## UML
-![UML](./UML1.png)
+![UML](./UML.png)
 ___
 
 ### Phase 2
