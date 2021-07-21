@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './form.scss';
 
 function Form(props) {
+  const [url, setUrl] = useState('');
+  const [method, setMethod] = useState('');
+
 
   const handleSubmit = e =>{
     e.preventDefault();
@@ -20,7 +23,7 @@ function Form(props) {
           <label >
             <span>URL: </span>
             <input name='url' type='text' />
-            <button type="submit">GO!</button>
+            <button data-testid="button" type="submit">GO!</button>
           </label>
           <label className="methods">
             <span id="get">GET</span>
