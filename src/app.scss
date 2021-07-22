@@ -1,30 +1,71 @@
-$backgroundColor: #272822;
+$mainBackground: #1E1E1E;
+$backgroundColor: #171717;
 $accentbackground: #4C4E42;
+$mainFontColor: #CECECE;
+
 
 *{
   box-sizing: border-box;
 }
 
 html, body {
+  color: $mainFontColor;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: $mainBackground;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: $accentbackground;
   height: 100%;
 
+
   .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: aliceblue;
-    background: $backgroundColor;
-    margin: 5% auto;
+    background: $mainBackground;
     padding: 5% 10% 5% 10%;
+    margin: auto;
     height: 100%;
-    border-radius: 20px;
+    width: 100%;
+    max-width: 1400px;
+
+    .grid{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 50px;
+
+      .left{
+        width: 50%;
+
+        .row{
+          display: flex;
+          flex-direction: row;
+
+          .method{
+            padding: 20px;
+            background: #000;
+            margin-right: 20px;
+          }
+
+          .url{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+
+      .right{
+        width: 50%;
+      }
+    }
+
+
+
   }
 
   #root {
@@ -34,15 +75,13 @@ body {
   }
 
   footer {
-    background: darken($backgroundColor, 50);
-    border-top: 1px solid #eee;
+    background: $backgroundColor;
     padding: 1em 3em;
     margin: 0;
   }
 
   header {
-    background: darken($backgroundColor, 75);
-    border-bottom: 1px solid #eee;
+    background: $mainBackground;
     color: #eee;
     padding: 0;
     margin: 0;
