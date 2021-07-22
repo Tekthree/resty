@@ -36,10 +36,27 @@ class App extends React.Component {
       <React.Fragment>
         <Header />
         <div className="container">
-          <div>Request Method: {this.state.requestParams.method}</div>
-          <div>URL: {this.state.requestParams.url}</div>
           <Form handleApiCall={this.callApi} />
-          <Results data={this.state.data} />
+           <div className="grid">
+
+             <div className="left">
+              
+                {
+                  (this.state.data===null)
+                  ? <div></div>
+                  : <div className="row">
+                      <div className="method">{this.state.requestParams.method}</div>
+                      <div className="url">{this.state.requestParams.url}</div>
+                    </div>
+                }
+              
+             </div>
+
+             <div className="right">
+              <Results data={this.state.data} />
+             </div>
+             
+           </div>
         </div>
         <Footer />
       </React.Fragment>
