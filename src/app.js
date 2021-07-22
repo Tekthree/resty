@@ -8,6 +8,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Form from './components/form';
 import Results from './components/results';
+import axios from 'axios';
 
 class App extends React.Component {
 
@@ -16,6 +17,7 @@ class App extends React.Component {
     this.state = {
       data: null,
       requestParams: {},
+      results: []
     };
   }
 
@@ -29,7 +31,16 @@ class App extends React.Component {
       ],
     };
     this.setState({data, requestParams});
+
+    axios.get(this.state.requestParams.method)
+    .then(response => {
+      let pokemonNames = response.data.results.map(pokemon => pokemon.name);
+      this.setState({results: pokemonNames });
+    });
   }
+
+  
+
 
   render() {
     return (
