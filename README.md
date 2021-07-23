@@ -53,3 +53,9 @@ ___
 
 ## UML
 ![UML](./UML3.png)
+
+### Phase 4
+-  we will be tracking every API call and storing it in history
+
+### User Stories
+- As a user, I want to see a list of my previous API calls, so that I can see the results again, quickly.
