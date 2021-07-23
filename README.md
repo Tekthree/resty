@@ -6,6 +6,7 @@
   * [test report]()
   * [deployment sandbox lab 26](https://codesandbox.io/s/pensive-platform-lmcz9)
   * [deployment sandbox lab 27](https://codesandbox.io/s/exciting-bardeen-h2hhp)
+  * [deployment sandbox lab 28](https://codesandbox.io/s/hopeful-glade-kx2vi)
 
 
 ## About
@@ -51,4 +52,4 @@ ___
 - As a user, I want to see the results returned from an API request in my browser in a readable format
 
 ## UML
-![UML](./UML2.png)
+![UML](./UML3.png)
