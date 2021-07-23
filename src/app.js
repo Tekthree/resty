@@ -17,27 +17,34 @@ class App extends React.Component {
     this.state = {
       data: null,
       requestParams: {},
-      results: []
     };
   }
 
   callApi = (requestParams) => {
     // mock output
-    const data = {
-      count: 2,
-      results: [
-        {name: 'fake thing 1', url: 'http://fakethings.com/1'},
-        {name: 'fake thing 2', url: 'http://fakethings.com/2'},
-      ],
-    };
-    this.setState({data, requestParams});
+    // const data = {
+    //   count: 2,
+    //   results: [
+    //     {name: 'fake thing 1', url: 'http://fakethings.com/1'},
+    //     {name: 'fake thing 2', url: 'http://fakethings.com/2'},
+    //   ],
+    // };
 
-    axios.get(this.state.requestParams.method)
-    .then(response => {
-      let pokemonNames = response.data.results.map(pokemon => pokemon.name);
-      this.setState({results: pokemonNames });
-    });
+    axios.get(requestParams.url)
+      .then(res => {
+        const data = res.data;
+        this.setState({data, requestParams});
+      })
+
+    console.log("this is the request",requestParams)
   }
+
+
+
+    
+
+    
+  
 
   
 

@@ -33,12 +33,13 @@ form {
 
 
     &.methods {
-      span {
+      button {
         cursor: pointer;
         border-radius: 3px;
         padding: .55rem 2rem;
         border: .5px solid #262626;
         background: $buttonColor;
+        color: white;
 
         &:hover, &.active {
           background: $buttonActive;

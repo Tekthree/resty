@@ -10,31 +10,34 @@ function Form(props) {
   const handleSubmit = e =>{
     e.preventDefault();
     const formData = {
-      method:{method},
-      url: {url},
+      method: method,
+      url: url,
     };
+    console.log("Im in",formData);
     props.handleApiCall(formData);
   }
 
-  const changeMethod = (e) => {
-    e.preventDefault()
-    setMethod(e.target.value);
-    console.log("it works")
+  const handleButton = e =>{
+    e.preventDefault();
+    setMethod(e.target.value)
+    console.log("i did it handleButton")
   }
+
+ 
 
   
     return (
       <>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={(e)=> handleSubmit(e)}>
           <label >
-            <input className="url-input" placeholder="Enter URL" name='url' type='text' />
+            <input onChange={(e)=> setUrl(e.target.value)} className="url-input" placeholder="Enter URL" name='url' type='text' />
             <button className="search-button" data-testid="button" type="submit">🔍</button>
           </label>
           <label className="methods">
-            <span onClick={changeMethod} value="GET" id="get">GET</span>
-            <span onClick={changeMethod} value="POST" id="post">POST</span>
-            <span onClick={changeMethod} value="PUT" id="put">PUT</span>
-            <span onClick={changeMethod} value="DELETE" id="delete">DELETE</span>
+            <button onClick={(e)=> handleButton(e)} value="PUT" id="put">PUT</button>
+            <button onClick={(e)=> handleButton(e)} value="DELETE" id="delete">DELETE</button>
+            <button onClick={(e)=> handleButton(e)} value="GET" id="get">GET</button>
+            <button onClick={(e)=> handleButton(e)} value="POST" id="post">POST</button>
           </label>
         </form>
       </>
